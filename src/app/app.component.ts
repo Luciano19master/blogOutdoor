@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { EntriesFormComponent } from "./components/entries-form/entries-form.component";
+import { EntriesPreviewComponent } from "./components/entries-preview/entries-preview.component";
+import { EntriesListComponent } from "./components/entries-list/entries-list.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [EntriesFormComponent, EntriesPreviewComponent, EntriesListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
