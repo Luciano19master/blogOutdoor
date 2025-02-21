@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { IEntries } from '../../interfaces/ientries.interfaces';
 
 @Component({
   selector: 'app-entries-form',
@@ -8,5 +9,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './entries-form.component.css'
 })
 export class EntriesFormComponent {
+  newEntry: IEntries = {
+    title: '', 
+    image: '', 
+    text: '', 
+    date: new Date()
+  };
 
 }
