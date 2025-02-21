@@ -4,3 +4,15 @@ header{
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container .content{
+    width: 100%;
+}
+.container aside{
+    width: 100%;
+}
