@@ -25,4 +25,9 @@ export class AppComponent {
       date: new Date('10/08/2024'),
     }
   ];
+
+  getDataEntry(event: IEntries) {
+    this.entriesList.push(event);
+    console.log(this.entriesList);
+  }
 }

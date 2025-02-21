@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IEntries } from '../../interfaces/ientries.interfaces';
 
@@ -15,5 +15,15 @@ export class EntriesFormComponent {
     text: '', 
     date: new Date()
   };
+  @Output() newEntryEvent: EventEmitter<IEntries> = new EventEmitter(); 
+  getEntry() {
+    this.newEntryEvent.emit(this.newEntry);
+    this.newEntry = {
+      title: '', 
+      image: '', 
+      text: '', 
+      date: new Date()
+    }
+  }
 
 }

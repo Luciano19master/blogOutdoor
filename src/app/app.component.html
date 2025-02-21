@@ -3,7 +3,7 @@
 </header>
 <main class="container">
   <aside>
-    <app-entries-form></app-entries-form>
+    <app-entries-form (newEntryEvent)="getDataEntry($event)"></app-entries-form>
   </aside>
   <div class="content">
     <section>
