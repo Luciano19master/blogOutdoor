@@ -27,7 +27,7 @@ export class AppComponent {
   ];
 
   getDataEntry(event: IEntries) {
-    this.entriesList.push(event);
+    this.entriesList= [...this.entriesList, event];
     console.log(this.entriesList);
   }
 }
