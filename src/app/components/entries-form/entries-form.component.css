@@ -1,12 +1,76 @@
+.formulario {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.formulario div {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
 input, textarea{
     display: block;
     padding: 10px;
     width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formulario{
-    padding: 25px;
+input:focus, textarea:focus {
+    border-color: #E2725B;
+    box-shadow: 0 0 5px rgba(226, 114, 91, 0.5);
+    outline: none;
 }
-.formulario div{
-    margin: 10px 0;
+
+input[type="date"] {
+    width: 25%;
+    cursor: pointer;
+}
+.date-input-wrapper {
+    position: relative;
+}
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="date"]:focus + .placeholder,
+input[type="date"]:not(:placeholder-shown) + .placeholder {
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+button[type="submit"] {
+    background-color: #E2725B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d15a44;
 }

@@ -1,11 +1,10 @@
-<div>
-    <h2>Post Seleccionado</h2>
-    <div class="post">
-        <h3>{{entrypreview!.title}}</h3>
+<div class="blog-post">
+    <article>
+        <h2>{{entrypreview!.title}}</h2>
         <figure>
             <img [src]="entrypreview!.image" alt="Foto de {{entrypreview!.title}}">
         </figure>
-        <p>{{entrypreview!.text}}</p>
-        <p>{{entrypreview!.date | date: 'dd/MM/yyyy'}}</p>
-    </div>
-</div> 
+        <p class="post-text">{{entrypreview!.text}}</p>
+        <p class="post-date">{{entrypreview!.date | date: 'dd/MM/yyyy'}}</p>
+    </article>
+</div>

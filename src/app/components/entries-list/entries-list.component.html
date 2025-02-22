@@ -2,7 +2,7 @@
     <h2>Posts</h2>
     <div class="flex">
         @for (entry of entries ; track $index) {
-        <article (click)="selectEntry(entry)" [class.selected]="entry === preview" class="card">   
+        <article (click)="selectEntry(entry)" [class.selected]="entry === preview" class="card post-card">   
             <figure>
                 <img [src]="entry.image" alt="Foto de {{entry.title}}">
             </figure>
