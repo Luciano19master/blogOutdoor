@@ -10,11 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class EntriesListComponent {
   @Input() entries: IEntries[] = [];
-
+  @Input() preview: any = null;
   @Output() entrieSelected = new EventEmitter<IEntries>();
-  ngOnInit() {
-
-  }
   selectEntry(entry: IEntries) {
     this.entrieSelected.emit(entry);
   }

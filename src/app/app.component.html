@@ -5,7 +5,7 @@
   <aside>
     <app-entries-form (newEntryEvent)="getDataEntry($event)"></app-entries-form>
     <section>
-      <app-entries-list [entries]="entriesList"  (entrieSelected)="entryPreview = $event"></app-entries-list>
+      <app-entries-list [entries]="entriesList"  [preview]="entryPreview" (entrieSelected)="entryPreview = $event"></app-entries-list>
     </section>
   </aside>
   <div class="content">
