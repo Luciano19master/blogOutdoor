@@ -1,9 +1,22 @@
-.post .flex{
+.post {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    max-width: 800px;
+    margin-top: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.post .flex {
     display: flex;
     flex-wrap: wrap;
     gap: 0.625rem; 
-    padding: 10px;
+    padding: 10px 0;
 }
+
 .post .flex article {
     width: 100%;
     display: flex;
@@ -12,61 +25,76 @@
     cursor: pointer;
     background: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    border: white ;
+    border: white;
     border-radius: 10px;
     transition: all 500ms ease;
     overflow: hidden;
 }
-.post .flex article .container{
+
+.post .flex article .container {
     padding: 10px;
 }
 
-.post .flex article:hover{
+.post .flex article:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
 }
-article img{
+
+article img {
     width: 100%;
     height: 200px;
     padding: 0;
-    object-fit: cover
+    object-fit: cover;
 }
-@media(width > 480px){
-    .post .flex article{
+.post .flex article.selected {
+    border: 2px solid #E2725B;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.5%)
+}
+@media (width > 480px) {
+    .post .flex article {
         width: calc(50% - 0.625rem);
     }
-    article img{
-        width: 100%;
+    article img {
         height: 150px;
-        object-fit: cover
     }
-
+    .post .flex article:hover {
+        transform: translateY(-3%);
+    }
+    .post .flex article.selected {
+        transform: translateY(-3%);
+    }
 }
-@media(min-width: 1024px){
-    .post .flex article{
+
+@media (min-width: 1024px) {
+    .post .flex article {
         width: calc(33.333% - 0.625rem);
     }
-    article img{
-        width: 100%;
+    article img {
         height: 100px;
-        object-fit: cover
+    }
+    .post {
+        margin-top: 0.5rem;
     }
 }
+
 .limited-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Cantidad de líneas que querés mostrar */
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
+    display: block; /* Cambiamos a block para que funcione con max-height */
+    max-height: 4em; /* Aproximadamente 3 líneas de texto (1.5em por línea) */
     overflow: hidden;
     margin: 20px 0;
-  }
-.fecha{
+    transition: max-height 1s ease; /* Transición suave */
+}
+
+.fecha {
     text-align: end;
     font-size: 0.75rem;
     color: #6a6a6a;
-  }
-  .post .flex article.selected {
-    border: 2px solid #E2725B;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
+}
+
+/* Media query para pantallas menores a 480px */
+@media (max-width: 480px) {
+    .post .flex article.selected .limited-text {
+        max-height: 1000px; /* Un valor lo suficientemente grande para mostrar todo el texto */
+        transition: max-height 3s ease; /* Transición suave */
+    }
 }

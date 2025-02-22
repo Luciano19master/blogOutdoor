@@ -6,7 +6,10 @@
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Segoe UI", "Helvetica Neue", sans-serif; }
+body { margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    background-color: #f9f9f9; 
+}
 img{
     width: 100%;
     height: auto;

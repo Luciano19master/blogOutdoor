@@ -15,13 +15,13 @@ export class AppComponent {
     {
       title: 'Psicobloc',
       image: 'https://static.nationalgeographic.es/files/styles/image_3200/public/01AlexHonnold.webp?w=1450&h=816',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.',
       date: new Date('2023-08-01'),
     },    
     {
       title: 'Free solo',
       image:'https://static.nationalgeographic.es/files/styles/image_3200/public/07AlexHonnold.webp?w=1450&h=967&q=100',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque.',
       date: new Date('2024-08-01'),
     }
   ];
