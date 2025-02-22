@@ -1,1 +1,11 @@
-<p>entries-preview works!</p>
+<div>
+    <h2>Post Seleccionado</h2>
+    <div class="post">
+        <h3>{{entrypreview!.title}}</h3>
+        <figure>
+            <img [src]="entrypreview!.image" alt="Foto de {{entrypreview!.title}}">
+        </figure>
+        <p>{{entrypreview!.text}}</p>
+        <p>{{entrypreview!.date | date: 'dd/MM/yyyy'}}</p>
+    </div>
+</div> 
