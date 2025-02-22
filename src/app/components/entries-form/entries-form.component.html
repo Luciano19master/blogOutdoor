@@ -1,20 +1,22 @@
-<div class="formulario">
-    <h2>Nueva entrada</h2>
-    <div>
-        <label for="title">Título</label>
-        <input type="text" id="title" [(ngModel)]="newEntry.title" placeholder="Escribe el título">
+<form (ngSubmit)="getEntry()" #entryForm="ngForm">
+    <div class="formulario">
+        <h2>Nueva entrada</h2>
+        <div>
+            <label for="title">Título</label>
+            <input type="text" id="title" [(ngModel)]="newEntry.title" name="title" placeholder="Escribe el título" required>
+        </div>
+        <div>
+            <label for="image">URL de la Imagen</label>
+            <input type="text" id="image" [(ngModel)]="newEntry.image" name="image" placeholder="Escribe la URL de la imagen" required>
+        </div>
+        <div>
+            <label for="text">Texto</label>
+            <textarea id="text" [(ngModel)]="newEntry.text" name="text" placeholder="Escribe el texto" required></textarea>
+        </div>
+        <div>
+            <label for="date">Fecha</label>
+            <input type="date" id="date" [(ngModel)]="newEntry.date" name="date" placeholder="Escribe la fecha" required>
+        </div>
+        <button type="submit">Añadir entrada</button>
     </div>
-    <div>
-        <label for="image"> URL de la Imagen</label>
-        <input type="text" id="image" [(ngModel)]="newEntry.image" placeholder="Escribe la URL de la imagen">
-    </div>
-    <div>
-        <label for="text">Texto</label>
-        <textarea id="text" [(ngModel)]="newEntry.text" placeholder="Escribe el texto"></textarea>
-    </div>
-    <div>
-        <label for="date">Fecha</label>
-        <input type="date" id="date" [(ngModel)]="newEntry.date">
-    </div>
-    <button (click)="getEntry()">Añadir entrada</button>
-</div>
+</form>

@@ -17,13 +17,16 @@ export class EntriesFormComponent {
   };
   @Output() newEntryEvent: EventEmitter<IEntries> = new EventEmitter(); 
   getEntry() {
-    this.newEntryEvent.emit(this.newEntry);
-    this.newEntry = {
-      title: '', 
-      image: '', 
-      text: '', 
-      date: new Date()
+    if (this.newEntry.title && this.newEntry.image && this.newEntry.text && this.newEntry.date) {
+      this.newEntryEvent.emit(this.newEntry);
+      this.newEntry = {
+        title: '', 
+        image: '', 
+        text: '', 
+        date: new Date()
+      }
+    }else{
+      alert('Todos los campos son obligatorios')
     }
   }
-
 }

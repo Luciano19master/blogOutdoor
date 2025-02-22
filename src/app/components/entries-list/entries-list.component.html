@@ -2,13 +2,13 @@
     <h2>Posts</h2>
     <div class="flex">
         @for (entry of entries ; track $index) {
-        <article (click)="selectEntry(entry)">
-            <h3>{{entry.title}}</h3>
+        <article (click)="selectEntry(entry)" class="card">
             <figure>
                 <img [src]="entry.image" alt="Foto de {{entry.title}}">
             </figure>
-            <p>{{entry.text}}</p>
-            <p>{{entry.date | date: 'dd/MM/yyyy'}}</p>
+            <h3>{{entry.title}}</h3>
+            <p class="limited-text">{{entry.text}}</p>
+            <p class="fecha">{{entry.date | date: 'dd/MM/yyyy'}}</p>
         </article>
         }
 
