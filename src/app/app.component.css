@@ -1,8 +1,12 @@
+h1{
+    text-align: center;
+    color: #F5F5DC
+}
 header{
     padding: 20px;
-    background-color: #f1f1f1;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: #004B49;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 .container{
     display: flex;

@@ -37,13 +37,11 @@
     font-size: 1rem;
     color: #555;
     margin: 20px 0;
-    text-align: justify; /* Texto justificado para un aspecto más profesional */
-}
-
+    text-align: justify; 
 .post-date {
     font-size: 0.875rem;
     color: #777;
     text-align: right;
     margin-top: 20px;
-    font-style: italic; /* Fecha en cursiva para diferenciarla */
+    font-style: italic; 
 }

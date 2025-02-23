@@ -39,27 +39,6 @@ input[type="date"] {
     width: 25%;
     cursor: pointer;
 }
-.date-input-wrapper {
-    position: relative;
-}
-
-.placeholder {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    pointer-events: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-input[type="date"]:focus + .placeholder,
-input[type="date"]:not(:placeholder-shown) + .placeholder {
-    opacity: 0;
-    transform: translateY(-30%);
-}
-
 button[type="submit"] {
     background-color: #E2725B;
     color: white;
